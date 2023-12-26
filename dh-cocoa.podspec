@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   }
   s.author           = { 'deokho-lee' => 'deokho.lee@nhnent.com' }
   s.source           = { :git => 'https://github.com/deokho-lee/dh-cocoa.git', :tag => s.version.to_s }
-
+  s.swift_versions = ['4.0', '4.2', '5.0']
   s.platform     = :ios, '11.0'
-  s.source_files = 'dh-cocoa/Classes/**/*'
-  s.resource = './dh-cocoa/dh-cocoa/PrivacyInfo.xcprivacy'
+  s.source_files = 'dh-cocoa/dh-cocoa/**/*'
+  s.resource = 'dh-cocoa/dh-cocoa/PrivacyInfo.xcprivacy'
 end
